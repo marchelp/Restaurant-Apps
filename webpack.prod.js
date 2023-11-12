@@ -24,7 +24,8 @@ module.exports = merge(common, {
       },
     ],
   },
-  plugins: [
-    new BundleAnalyzerPlugin(),
-  ],
+  // Comment just for deploy to netlify not found error
+  // plugins: [
+  //   new BundleAnalyzerPlugin(),
+  // ],
 });
