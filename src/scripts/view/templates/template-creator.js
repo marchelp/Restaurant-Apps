@@ -5,7 +5,7 @@ import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 const createRestaurantItemTemplate = (restaurant) => `
   <div class="restaurant restaurant-item skeleton">
     <div class="thumb">
-    <img src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" alt="${restaurant.name}" class="restaurant-image lazyload">
+    <img data-src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" alt="${restaurant.name}" class="restaurant-image lazyload">
       <p class="city">Kota ${restaurant.city || '-'}</p>
     </div>
     <div class="description">
